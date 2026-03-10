@@ -6,36 +6,43 @@
 <title>A Simple Introduction</title>
 
 <style>
+
 body{
 font-family: Arial, sans-serif;
-line-height: 1.7;
-padding: 20px;
-margin: 0;
-font-size: 26px;
+line-height:1.7;
+margin:0;
+padding:20px;
+
+/* responsive font */
+font-size: clamp(20px, 2.4vw, 28px);
 }
 
 h1{
-font-size: 34px;
+font-size: clamp(26px, 3.5vw, 36px);
+margin-bottom:10px;
 }
 
-@media (max-width:600px){
-body{
-font-size: 32px;
+audio{
+width:100%;
+margin-bottom:25px;
 }
-h1{
-font-size: 38px;
+
+.container{
+max-width:850px;
+margin:auto;
 }
-}
+
 </style>
-
 </head>
 
 <body>
 
+<div class="container">
+
 <h1>A Simple Introduction</h1>
 <p>(Tech Traduções)</p>
 
-<audio controls style="width:100%; margin-bottom:25px;">
+<audio controls>
 <source src="audio.mp3" type="audio/mpeg">
 </audio>
 
@@ -48,6 +55,8 @@ font-size: 38px;
 <p>In my free time, I like listening to music, watching movies, and playing football with my friends. My favorite food is pizza and my favorite drink is orange juice.</p>
 
 <p>On weekends, I often visit my family or relax at home. I like my life because it is simple and comfortable.</p>
+
+</div>
 
 </body>
 </html>
